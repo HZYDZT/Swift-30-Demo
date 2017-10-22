@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Day03" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gl5-sz-GaV">
+                                <rect key="frame" x="187.5" y="353.5" width="187.5" height="313.5"/>
+                                <color key="backgroundColor" red="1" green="0.076536486710000004" blue="0.0164466929" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="icon_pause"/>
+                                <connections>
+                                    <action selector="pauseBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CgK-BL-TVF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGm-7x-ZXb">
+                                <rect key="frame" x="0.0" y="20" width="375" height="333.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="54"/>
+                                <color key="textColor" red="1" green="0.52877535679999998" blue="0.40641306929999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ON0-oF-mm8">
+                                <rect key="frame" x="305" y="20" width="50" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="I0k-uz-cPz"/>
+                                    <constraint firstAttribute="width" constant="50" id="qs2-so-xAv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hFo-mV-8JR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLR-8j-xsd">
+                                <rect key="frame" x="0.0" y="353" width="187.5" height="313.5"/>
+                                <color key="backgroundColor" red="0.21293146240170296" green="0.0829167695587614" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="icon_play"/>
+                                <connections>
+                                    <action selector="playAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lQg-2w-KJQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sGm-7x-ZXb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="88q-Wp-6gG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sGm-7x-ZXb" secondAttribute="trailing" id="949-FE-scc"/>
+                            <constraint firstItem="QLR-8j-xsd" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="LY8-X1-ZUD"/>
+                            <constraint firstItem="gl5-sz-GaV" firstAttribute="top" secondItem="sGm-7x-ZXb" secondAttribute="bottom" id="O61-OM-xhY"/>
+                            <constraint firstItem="sGm-7x-ZXb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="PvS-7t-xqt"/>
+                            <constraint firstItem="sGm-7x-ZXb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SnU-Ky-h3r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ON0-oF-mm8" secondAttribute="trailing" constant="20" id="TDs-Ta-V8K"/>
+                            <constraint firstItem="QLR-8j-xsd" firstAttribute="top" secondItem="sGm-7x-ZXb" secondAttribute="bottom" id="Zzr-xd-xUi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gl5-sz-GaV" secondAttribute="bottom" id="cZY-nm-xBg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QLR-8j-xsd" secondAttribute="bottom" id="hCD-ih-QCm"/>
+                            <constraint firstItem="ON0-oF-mm8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="p7A-gJ-9zV"/>
+                            <constraint firstItem="gl5-sz-GaV" firstAttribute="leading" secondItem="QLR-8j-xsd" secondAttribute="trailing" id="sVJ-hf-sze"/>
+                            <constraint firstItem="QLR-8j-xsd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vhj-IT-PTN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gl5-sz-GaV" secondAttribute="trailing" id="yHB-Sh-5Bm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY" userLabel="Touch"/>
+                    </view>
+                    <connections>
+                        <outlet property="timeLabel" destination="sGm-7x-ZXb" id="TqT-5l-viH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_pause" width="20" height="20"/>
+        <image name="icon_play" width="20" height="20"/>
+    </resources>
+</document>
